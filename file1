@@ -1,0 +1,58 @@
+-- creating a database
+create database heroviredcompany;
+-- creating a table rgm
+create table rgm(
+id int primary key not null,
+name varchar(30) not null,
+college varchar(30) not null,
+session varchar(20) not null,
+contact_no varchar(40) not null
+);
+-- Inserting the values in to table rgm
+INSERT INTO rgm VALUES(10,"sukanya","RGM","sql","123423");
+INSERT INTO rgm VALUES(20,"vijaya","svcet","python","134566");
+INSERT INTO rgm VALUES(30,"abhi","sv","java","144335");
+INSERT INTO rgm VALUES(40,"priya","pulla reddy","c","552312");
+INSERT INTO rgm VALUES(50,"teja","pullaih","c++","125463");
+INSERT INTO rgm VALUES(60,"lali","sanskriti","ds","978056");
+INSERT INTO rgm VALUES(70,"divya","srit","fsad","567833");
+INSERT INTO rgm VALUES(80,"sree","mids","os","231456");
+INSERT INTO rgm VALUES(90,"swetha","geetham","ap","872341");
+INSERT INTO rgm VALUES(100,"sushu","srm","bda","543561");
+--Another method to insert values into table
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(10,"sukanya","RGM","sql","123432");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(20,"vijaya","svcet","python","134566");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(30,"abhi","sv","java","144335");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(40,"priya","pulla reddy","c","552312");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(50,"teja","pullaih","c++","125463");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(60,"lali","sanskriti","ds","978056");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(70,"divya","srit","fsad","567833");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(80,"sree","mids","os","231456");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(90,"swetha","geetham","ap","872341");
+INSERT INTO rgm(id,name,college,session,contact_no)
+VALUES(100,"sushu","srm","bda","543561");
+--to dispaly the table
+select * from rgm;
+
+-- creating a database
+create database rgm;
+--creating a table student
+create table student(
+student_id int,student_name varchar(30),student_contact varchar(40),student_dept varchar(20)
+);
+INSERT INTO student VALUES(101,"sukanya","234567","cse");
+INSERT INTO student VALUES(102,"lalithya","236578","ece");
+INSERT INTO student VALUES(103,"sreelatha","567847","eee");
+INSERT INTO student VALUES(104,"sumera","321567","mech");
+INSERT INTO student VALUES(105,"revati","432156","civil");
+--to display the table
+select * from student;
