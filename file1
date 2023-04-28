@@ -40,6 +40,10 @@ INSERT INTO rgm(id,name,college,session,contact_no)
 VALUES(90,"swetha","geetham","ap","872341");
 INSERT INTO rgm(id,name,college,session,contact_no)
 VALUES(100,"sushu","srm","bda","543561");
+
+-- Another way to insert multiple values in to table
+INSERT INTO rgm vALUES(101,"pallavi","mids","ap","334567"),(102,"latha","jntua","uit","231234"),(103,"vijji","rgm","dbms","312567");
+
 --to dispaly the table
 select * from rgm;
 
@@ -47,7 +51,10 @@ select * from rgm;
 create database rgm;
 --creating a table student
 create table student(
-student_id int,student_name varchar(30),student_contact varchar(40),student_dept varchar(20)
+student_id int primary key not null,
+student_name varchar(30) not null,
+student_contact varchar(40) not null,
+student_dept varchar(20) not null
 );
 INSERT INTO student VALUES(101,"sukanya","234567","cse");
 INSERT INTO student VALUES(102,"lalithya","236578","ece");
@@ -56,3 +63,4 @@ INSERT INTO student VALUES(104,"sumera","321567","mech");
 INSERT INTO student VALUES(105,"revati","432156","civil");
 --to display the table
 select * from student;
+
